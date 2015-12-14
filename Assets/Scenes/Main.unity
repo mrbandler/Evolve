@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6acaeeb6e8cd57d42bae958119756c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shitCoolDown: 3
+  shitCoolDown: 1
   speed: 15
   upDownSpeed: 0.1
   mouseSensitivity: 3

@@ -9,6 +9,7 @@ namespace LD34.PlayerCode
         public AudioClip buzzSound;
         public GameObject shitPrefab;
         public Transform shitPosition;
+        [HideInInspector]
         public AudioSource flyAudio;
 
         //private
