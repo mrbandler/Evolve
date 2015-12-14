@@ -37,6 +37,10 @@ namespace LD34.Manager
         public void Update()
         {
             DoEvolve();
+            if (currentPlayer.State == EvolveState.HORST)
+            {
+                Cursor.visible = true;
+            }
         }
 
         #region Private methods
@@ -59,6 +63,7 @@ namespace LD34.Manager
         {
             CancelInvoke();
             currentPlayer.PlayerController.Die();
+            Cursor.visible = true;
         }
 
         /// <summary>
@@ -78,6 +83,11 @@ namespace LD34.Manager
                 if (currentPlayer.MustShit)
                 {
                     InvokeRepeating("UpdatePlayerHealthStats", secondsBetweenPlayerStatUpdates, secondsBetweenPlayerStatUpdates);
+                }
+                else
+                {
+                    CancelInvoke();
+                    InvokeRepeating("UpdatePlayerHungerStats", secondsBetweenPlayerStatUpdates, secondsBetweenPlayerStatUpdates);
                 }
             }
         }
