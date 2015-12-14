@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &126070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 458576}
+  - 33: {fileID: 3368028}
+  - 23: {fileID: 2328828}
+  - 95: {fileID: 9540132}
+  - 64: {fileID: 6436640}
+  - 135: {fileID: 13560808}
+  - 114: {fileID: 11447632}
+  m_Layer: 0
+  m_Name: CakePiece
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458576
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_LocalRotation: {x: -0.30163774, y: -0.14147158, z: -0.85370123, w: -0.40024334}
+  m_LocalPosition: {x: -11.766, y: 5.13, z: -15.194}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2328828
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: ff2f129a648d28a4f839a678471ced7a, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3368028
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_Mesh: {fileID: 4300000, guid: e70aff02d0136ac4da86fa88d787d7c7, type: 3}
+--- !u!64 &6436640
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 4300000, guid: e70aff02d0136ac4da86fa88d787d7c7, type: 3}
+--- !u!95 &9540132
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e70aff02d0136ac4da86fa88d787d7c7, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11447632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7f826a45c45dcb43856649e6cf95d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eatableName: cake piece
+  PickUpAlert: {fileID: 167124, guid: 3fec140578ee06041a76cc99e4074d4c, type: 2}
+  EatingSlider: {fileID: 131854, guid: 2bf199de6d6c5ea4286059a8524e5ab4, type: 2}
+  timeToDestroy: 2
+  health: 10
+  energy: 10
+  hunger: 10
+  evolvePoints: 4
+--- !u!135 &13560808
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.67
+  m_Center: {x: -0.16320007, y: -0.23080005, z: 0.16543001}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: evolvePoints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: eatableName
+      value: cake piece
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: PickUpAlert
+      value: 
+      objectReference: {fileID: 167124, guid: 3fec140578ee06041a76cc99e4074d4c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: EatingSlider
+      value: 
+      objectReference: {fileID: 131854, guid: 2bf199de6d6c5ea4286059a8524e5ab4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.67
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 126070}
+  m_IsPrefabParent: 1
